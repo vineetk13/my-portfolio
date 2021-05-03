@@ -70,16 +70,18 @@ const Container = styled.div`
 const Title = styled.p`
     font-weight:bold;
     font-size:22px;
-    font-family: 'Nunito', sans-serif;
+    // font-family: 'Nunito', sans-serif;
+    // border:1px solid red;
     @media (max-width: 600px) {
-       font-size:16px;
+       font-size:18px;
     }
 `;
 const Location = styled.p`
-    font-weight:bold;
+    font-weight:500;
     font-size:18px;
+    // color:#A1A7C4;
     @media (max-width: 600px) {
-        font-size:14px;
+        font-size:16px;
      }
 `;
 const Desc = styled.p`
