@@ -37,7 +37,7 @@ const Container = styled.div`
     // border:2px solid green;
     // box-shadow: 0 0 5px rgba(0,0,0,0.4);
     width:35vw;
-    @media (max-width: 375px) {
+    @media (max-width: 600px) {
         margin-bottom:15px;
         width:85vw;
     }

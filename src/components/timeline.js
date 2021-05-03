@@ -82,6 +82,7 @@ const Location = styled.p`
     // color:#A1A7C4;
     @media (max-width: 600px) {
         font-size:16px;
+        margin-top:5px;
      }
 `;
 const Desc = styled.p`
