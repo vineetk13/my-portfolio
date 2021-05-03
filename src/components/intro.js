@@ -45,8 +45,7 @@ const Introduction = () => {
             <Greeting>Hello,</Greeting>
             <Intro>I'm Vineet K</Intro>
             <Summary>
-                Passionate in web design and development. Flawless designer mind with hands on experience
-                in designing web and mobile prototypes over top featured tools. Enthusiast of constant learning and dedicated towards creative thinking.         
+                Passionate in web design and development. Strengthened in various frontend techologies by building projects under different domains and implementing complex user requirements. Enthusiast of constant learning and dedicated towards creative thinking.         
             </Summary>
         </Container>
     )

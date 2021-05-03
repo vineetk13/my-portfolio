@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { faExternalLinkAlt, faLink } from '@fortawesome/free-solid-svg-icons';
+import Img from '../assets/illustrations/up-arrow.svg';
 
 const Links = styled.div`
     // display:none;
@@ -18,8 +19,16 @@ const Overlay = styled.div`
     background-color:black;
     opacity:0.7;
     width: calc(100% - 31px);
-    height: 5%;
+    height: 4%;
     transition: 0.3s ease;
+    &::before{
+        content:url(${Img});
+        position:absolute;
+        top:-10px;
+        opacity:1;
+        color:white;
+        left:calc(50% - 5px);
+    }
     &:hover {
         height: 40%;
     }
@@ -63,8 +72,7 @@ const MobileApp = (props) => {
                 <Details>
                     <Title>{props.appName}</Title><br/>
                     <Links>
-                        <FontAwesomeIcon size="2x" icon={faGithub} />
-                        {/*<FontAwesomeIcon size="2x" icon={faExternalLinkAlt} />*/}
+                        <a style={{color:"white"}} href={props.git} target="_blank"><FontAwesomeIcon size="2x" icon={faGithub}  /></a>
                     </Links>
                 </Details>
             </Overlay>

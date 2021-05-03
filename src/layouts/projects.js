@@ -42,12 +42,12 @@ const Projects = () => {
         <Container id="projects">
             <Heading>Projects</Heading>
             <Section>
-                <MobileApp appName="Movie Browser App" appImage={MovieBrowser} />
-                <MobileApp appName="Pomodoro Timer App" appImage={Pomodoro} />
+                <MobileApp appName="Movie Browser App" appImage={MovieBrowser} git="https://github.com/vineetk13/React-Native-Movie-Browser-app" />
+                <MobileApp appName="Pomodoro Timer App" appImage={Pomodoro} git="https://github.com/vineetk13/React-Native-Pomodoro-timer-app" />
                 <div>
                     {/*<WebApp appName="React TODO App" appImage={ReactTodo} gitlink="https://github.com/vineetk13/React-TODO-App" />*/}
-                    <WebApp appName="React Books Store" appImage={BookStore} />
-                    <WebApp appName="React Image Gallery" appImage={PhotoFeed} />
+                    <WebApp appName="React Books Store" appImage={BookStore} git="https://github.com/vineetk13/react-books-store" />
+                    <WebApp appName="React Image Gallery" appImage={PhotoFeed} git="https://github.com/vineetk13/react-image-gallery" />
                 </div>
             </Section>
         </Container>

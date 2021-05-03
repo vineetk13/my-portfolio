@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLink } from '@fortawesome/free-solid-svg-icons';
+import Img from '../assets/illustrations/up-arrow.svg';
 
 const Links = styled.div`
     // display:none;
@@ -23,6 +24,14 @@ const Overlay = styled.div`
     width: 75%;
     transition: .4s ease;
     height:10%;
+    &::before{
+        content:url(${Img});
+        position:absolute;
+        top:-10px;
+        opacity:1;
+        color:white;
+        left:calc(50% - 5px);
+    }
     &:hover {
         height: 50%;
     }
@@ -68,8 +77,7 @@ const WebApp = (props) => {
                 <Details>
                     <Title>{props.appName}</Title>
                     <Links>
-                        <FontAwesomeIcon onClick={()=>{console.log("Github icon clicked")}} size="2x" icon={faGithub} />&emsp;
-                        <FontAwesomeIcon size="lg" icon={faLink} />
+                        <a style={{color:"white"}} href={props.git} target="_blank"><FontAwesomeIcon size="2x" icon={faGithub} /></a>
                     </Links>
                 </Details>
             </Overlay>
