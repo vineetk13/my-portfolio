@@ -15,7 +15,7 @@ const Container = styled.div`
         left:calc(50% - 2px);
         width:4px;
         height:100%;
-        @media (max-width: 375px) {
+        @media (max-width: 600px) {
             z-index:-1;
          }
     }
@@ -26,7 +26,7 @@ const Heading = styled.p`
     font-size:40px;
     color:#192A56;
     padding:20px 80px;
-    @media (max-width: 375px) {
+    @media (max-width: 600px) {
         font-size:30px;
         padding-left:20px;
         padding-right:20px;

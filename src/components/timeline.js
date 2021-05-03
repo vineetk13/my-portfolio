@@ -22,11 +22,11 @@ const Content = styled.div`
         border-radius:50%;
         border:4px solid #FF1A1A;
         height:15px;
-        @media (max-width: 375px) {
+        @media (max-width: 600px) {
             display:none;
          }
     }
-    @media (max-width: 375px) {
+    @media (max-width: 600px) {
         margin-left:0px;
         margin-right:0px;
         text-align:left;
@@ -46,7 +46,7 @@ const Container = styled.div`
         justify-content:flex-start;
         padding-right:0px;
         // padding-left:20px;
-        @media (max-width: 375px) {
+        @media (max-width: 600px) {
             width:100%;
             justify-content:center;
             background-color:white;
@@ -60,7 +60,7 @@ const Container = styled.div`
         right:auto;
         left:-31px;
     }
-    @media (max-width: 375px) {
+    @media (max-width: 600px) {
         width:100%;
         justify-content:center;
         background-color:white;
@@ -71,14 +71,14 @@ const Title = styled.p`
     font-weight:bold;
     font-size:22px;
     font-family: 'Nunito', sans-serif;
-    @media (max-width: 375px) {
+    @media (max-width: 600px) {
        font-size:16px;
     }
 `;
 const Location = styled.p`
     font-weight:bold;
     font-size:18px;
-    @media (max-width: 375px) {
+    @media (max-width: 600px) {
         font-size:14px;
      }
 `;
@@ -91,14 +91,14 @@ const Desc = styled.p`
     font-weight:bold;
     margin:10px 0;
     display:inline-block;
-    @media (max-width: 375px){
+    @media (max-width: 600px){
         font-size:14px;
         padding:5px 7px;
     }
 `;
 const Period = styled.p`
     color:#2B2B52;
-    @media (max-width: 375px){
+    @media (max-width: 600px){
         font-size:14px;
     }
 `;

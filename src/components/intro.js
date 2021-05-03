@@ -5,8 +5,8 @@ const Container = styled.div`
     padding:20px 80px;
     width:530px;
     // border:1px solid blue;
-    @media (max-width: 375px) {
-        padding:40px 20px;
+    @media (max-width: 760px) {
+        padding:40px 30px;
     }
 `;
 const Greeting = styled.p`
@@ -14,7 +14,7 @@ const Greeting = styled.p`
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
     font-size: 80px;
-    @media (max-width: 375px) {
+    @media (max-width: 760px) {
         font-size:60px;
     }
 `;
@@ -22,10 +22,11 @@ const Intro = styled.p`
     margin-top:10px;
     // font-family: 'Archivo', sans-serif;
     font-family: 'Poppins', sans-serif;
-    font-weight: bolder;
+    font-weight: 900;
     font-size: 55px;
-    @media (max-width: 375px) {
+    @media (max-width: 760px) {
         font-size:45px;
+        // color:orange;
     }
 `;
 const Summary = styled.p`
@@ -33,7 +34,7 @@ const Summary = styled.p`
     font-size:20px;
     font-family: 'Nunito', sans-serif;
     // font-weight:bold;
-    @media (max-width: 375px) {
+    @media (max-width: 760px) {
         font-size:18px;
     }
 `;
