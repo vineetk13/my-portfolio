@@ -39,6 +39,7 @@ const Container = styled.div`
     display:flex;
     justify-content:flex-end;
     // padding-right:20px;
+    background-color:#ffffff;
     margin:10px 0;
     width:50%;
     &:nth-child(odd){
@@ -79,7 +80,7 @@ const Title = styled.p`
 const Location = styled.p`
     font-weight:500;
     font-size:18px;
-    // color:#A1A7C4;
+    // color:#2B2B52;
     @media (max-width: 600px) {
         font-size:16px;
         margin-top:5px;

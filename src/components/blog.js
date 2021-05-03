@@ -49,9 +49,9 @@ const Title = styled.p`
 const BottomSection = styled.div`
       display:flex;
       // border:1px solid red;
-      width:25%;
+      // width:25%;
       align-items:center;
-      justify-content:space-between;
+      // justify-content:space-between;
       @media (max-width:760px){
             width:40%;
       }
@@ -75,8 +75,8 @@ export const BlogComponent = (props) => {
                         <Description>{desc}</Description>
                   </div>
                   <BottomSection>
-                        <FontAwesomeIcon icon={faHeart} />{reactions}
-                        <img src={CommentIcon} alt="comment icon" width="15px" height="15px" />{comments}
+                        <FontAwesomeIcon style={{color:"#F0142F"}} icon={faHeart} />&ensp;{reactions}&emsp;
+                        <img src={CommentIcon} alt="comment icon" width="15px" height="15px" />&ensp;{comments}
                   </BottomSection>
             </Container>
       )

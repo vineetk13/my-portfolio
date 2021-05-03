@@ -25,6 +25,7 @@ const Ul = styled.ul`
       }
     }
 `
+
 const Li = styled.li`
     // float:left;
     font-family: 'Nunito', sans-serif;
@@ -39,6 +40,7 @@ const Li = styled.li`
     }
     @media (max-width: 768px){
       padding-right:30px;
+      font-size:22px;
     }
 `;
 const Burger = styled.div`
@@ -53,6 +55,7 @@ const Burger = styled.div`
   @media (max-width: 768px) {
     display: block;
     cursor: pointer;
+    
   }
 `;
 // const burgerLines = styled.keyfr
@@ -117,7 +120,7 @@ const Navig = (props) => {
     // console.log(props);
     return (
         <div className="burger" style={{position:"relative"}}>
-            <Ul onClick={onToggleNav}>
+            <Ul className="nav-links" onClick={onToggleNav}>
                 <Li><CustmLink href="#education" style={{color:hash==="#education" && "#32B4D3"}} >Education & Experience</CustmLink></Li>
                 <Li><CustmLink href="#skills" style={{color:hash==="#skills" && "#32B4D3"}}>Skills</CustmLink></Li>
                 <Li><CustmLink href="#projects" style={{color:hash==="#projects" && "#32B4D3"}}>Projects</CustmLink></Li>

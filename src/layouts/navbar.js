@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Navig from '../components/navigation';
+import Logo from '../assets/illustrations/logo2.svg';
 
 const Container = styled.nav`
     padding:0 25px;
@@ -22,7 +23,7 @@ const Container = styled.nav`
 const Navbar = () => {
     return (
         <Container>
-            <a href="#">VK</a>
+            <img src={Logo} width="40" height="auto" />
             <Navig />
             
         </Container>

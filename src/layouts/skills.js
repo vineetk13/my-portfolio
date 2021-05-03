@@ -151,7 +151,7 @@ const Skills = () => {
                 <Skill>
                     <Img 
                         src={Node} 
-                        style={{width:"5em"}} 
+                        style={{width:"6em"}} 
                     />
                 </Skill>
             </Section>
