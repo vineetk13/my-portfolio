@@ -7,6 +7,7 @@ import Navbar from './layouts/navbar';
 import Skills from './layouts/skills';
 import Projects from './layouts/projects';
 import BlogsLayout from './layouts/blogs';
+import CtaLayout from './layouts/cta';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Skills />
         <Projects />
         <BlogsLayout />
+        <CtaLayout />
       </Router>
     </div>
   );

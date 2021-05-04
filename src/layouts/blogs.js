@@ -5,8 +5,9 @@ import { BlogComponent } from '../components/blog';
 
 const Container = styled.div`
       // border:2px dashed green;
-      padding:20px 80px;
-      padding-top:0;
+      padding:40px 80px;
+      background-color:#d8eefe;
+      // padding-top:0;
       @media (max-width:760px){
             padding:20px;
       }
@@ -17,7 +18,7 @@ const Heading = styled.p`
     color:#192A56;
 `;
 const BlogsSection = styled.div`
-      margin-top:40px;
+      margin-top:30px;
       display:grid;
       grid-template-columns:repeat(auto-fill, minmax(350px,1fr));
       grid-auto-rows: auto;

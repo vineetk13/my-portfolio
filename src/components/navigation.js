@@ -125,7 +125,7 @@ const Navig = (props) => {
                 <Li><CustmLink href="#skills" style={{color:hash==="#skills" && "#32B4D3"}}>Skills</CustmLink></Li>
                 <Li><CustmLink href="#projects" style={{color:hash==="#projects" && "#32B4D3"}}>Projects</CustmLink></Li>
                 <Li><CustmLink href="#blogs" style={{color:hash==="#blogs" && "#32B4D3"}}>Blogs</CustmLink></Li>
-                <Li><a>Contact</a></Li>
+                <Li><CustmLink href="#contact" style={{color:hash==="#contact" && "#32B4D3"}}>Contact</CustmLink></Li>
             </Ul>
             <Burger onClick={onToggleNav}>
                 <Line1></Line1>

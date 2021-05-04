@@ -26,6 +26,7 @@ const Section = styled.div`
     // border:1px solid red;
     // padding:0px 30px;
     margin:30px 0;
+    margin-top:20px;
     // background-color:#101820;
     justify-content:space-around;
     @media (max-width: 760px) {

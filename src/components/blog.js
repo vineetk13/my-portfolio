@@ -9,6 +9,7 @@ const Container = styled.div`
       // border:1px solid blue;
       font-family: 'Nunito', sans-serif;
       border: 1px solid #d0d0d0;
+      background-color:#ffffff;
       // width:70vw;
       max-width:350px;
       // box-sizing:border-box;
