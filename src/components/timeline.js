@@ -8,6 +8,10 @@ const Content = styled.div`
     margin-right:20px;
     padding:15px 20px;
     // border: 1px solid #d0d0d0;
+    transition: background-color 250ms;
+    background-color:${props => props.theme==="light" ? "#ffffff" : "#242629"};
+    color:${props => props.theme=="dark" ? "#fffffe" : "black"};
+    // font-weight:${props => props.theme=="dark" ? "400" : "bold"};
     // max-width:70%;
     width:450px;
     box-shadow: 0 0 5px rgba(0,0,0,0.4);
@@ -39,7 +43,7 @@ const Container = styled.div`
     display:flex;
     justify-content:flex-end;
     // padding-right:20px;
-    background-color:#ffffff;
+    // background-color:#ffffff;
     margin:10px 0;
     width:50%;
     &:nth-child(odd){
@@ -50,7 +54,7 @@ const Container = styled.div`
         @media (max-width: 600px) {
             width:100%;
             justify-content:center;
-            background-color:white;
+            // background-color:white;
          }
     }
     &:nth-child(even){
@@ -64,13 +68,15 @@ const Container = styled.div`
     @media (max-width: 600px) {
         width:100%;
         justify-content:center;
-        background-color:white;
+        // background-color:white;
+        z-index:2;
      }
 `;
 
 const Title = styled.p`
     font-weight:bold;
     font-size:22px;
+    margin-bottom:6px;
     // font-family: 'Nunito', sans-serif;
     // border:1px solid red;
     @media (max-width: 600px) {
@@ -83,7 +89,7 @@ const Location = styled.p`
     // color:#2B2B52;
     @media (max-width: 600px) {
         font-size:16px;
-        margin-top:5px;
+        // margin-top:5px;
      }
 `;
 const Desc = styled.p`
@@ -101,21 +107,24 @@ const Desc = styled.p`
     }
 `;
 const Period = styled.p`
-    color:#2B2B52;
+    // color:;
+    font-weight:450;
+    color:${props => props.theme=="dark" ? "#32B4D3" : "#2B2B52"};
     @media (max-width: 600px){
         font-size:14px;
     }
 `;
 
 
-const TimelineElement = ({data}) => {
+const TimelineElement = (props) => {
+    const {data, theme} = props;
     return (
         <Container key={data.id}>
-            <Content>
+            <Content theme={theme}>
                 <Title>{data.title}</Title>
                 <Location>{data.location}</Location>
                 <Desc>{data.description}</Desc>
-                <Period>{data.period}</Period>
+                <Period theme={theme}>{data.period}</Period>
             </Content>
         </Container>
     )

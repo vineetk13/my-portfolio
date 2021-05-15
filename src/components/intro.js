@@ -5,6 +5,7 @@ const Container = styled.div`
     padding:20px 80px;
     width:530px;
     // border:1px solid blue;
+    color:${props => props.theme=="dark" ? "#fffffe" : "black"};
     @media (max-width: 760px) {
         padding:40px 30px;
     }
@@ -33,18 +34,18 @@ const Summary = styled.p`
     margin-top:20px;
     font-size:20px;
     font-family: 'Nunito', sans-serif;
-    // font-weight:bold;
+    color:${props => props.theme=="dark" ? "#a7a9be" : "black"};
     @media (max-width: 760px) {
         font-size:18px;
     }
 `;
 
-const Introduction = () => {
+const Introduction = (props) => {
     return (
-        <Container>
+        <Container {...props}>
             <Greeting>Hello,</Greeting>
             <Intro>I'm Vineet K</Intro>
-            <Summary>
+            <Summary {...props}>
                 Passionate in web design and development. Strengthened in various frontend techologies by building projects under different domains and implementing complex user requirements. Enthusiast of constant learning and dedicated towards creative thinking.         
             </Summary>
         </Container>

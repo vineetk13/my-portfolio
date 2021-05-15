@@ -1,19 +1,34 @@
-import React,{ useState } from 'react';
+import React,{ useState, useContext } from 'react';
 import styled from 'styled-components';
 
+import { ThemeContext } from '../App';
+
 import EmailIcon from '../assets/illustrations/email.svg';
+import EmailDark from '../assets/illustrations/email-dark.svg';
+
 import Phone from '../assets/illustrations/phone.svg';
+import PhoneDark from '../assets/illustrations/phone-dark.svg';
+
 import Home from '../assets/illustrations/home.svg';
+import HomeDark from '../assets/illustrations/home-dark.svg';
+
 import Github from '../assets/illustrations/github.svg';
+import GithubDark from '../assets/illustrations/github-dark.svg';
 import Linkedin from '../assets/illustrations/linkedin.svg';
+import LinkedinDark from '../assets/illustrations/linkedin-dark.svg';
 import Twitter from '../assets/illustrations/twitter.svg';
-import Facebook from '../assets/illustrations/facebook.svg';
+import TwitterDark from '../assets/illustrations/twitter-dark.svg';
 
 const Container = styled.div`
       // border:2px dashed green;
       padding:40px 100px;
+      transition: background-color 250ms;
+      background-color:${props => props.theme==="light" ? "#ffffff" : "#16161a"};
       @media (max-width:760px){
             padding:20px;
+      }
+      &>p{
+            color:${props => props.theme=="dark" ? "#fffffe" : "#192A56"};
       }
 `;
 const Heading = styled.p`
@@ -23,7 +38,7 @@ const Heading = styled.p`
     color:#192A56;
 `;
 const Email = styled.input`
-      border: 1px solid #C4C4C4;
+      // border: 1px solid #C4C4C4;
       border-radius:6px;
       padding:8px 8px;
       font-size:16px;
@@ -45,7 +60,7 @@ const Email = styled.input`
       }
 `;
 const Message = styled.textarea`
-      border: 1px solid #C4C4C4;
+      // border: 1px solid #C4C4C4;
       border-radius:6px;
       padding:8px 8px;
       font-size:16px;
@@ -80,6 +95,12 @@ const InputWrapper = styled.div`
             order:-1;
             margin-bottom:25px;
       }
+      &>input,&>textarea{
+            transition: background-color 250ms;
+            background-color:${props => props.theme==="light" ? "#ffffff" : "#242629"};
+            border:${props => props.theme==="light" ? "1px solid #C4C4C4" : "none"};
+            color:${props => props.theme==="light" ? "black" : "#fffffe"};
+      }
 `;
 const Button = styled.button`
       cursor:pointer;
@@ -96,21 +117,28 @@ const Button = styled.button`
       }
 `;
 const Info = styled.div`
-      // border:1px solid red;
+      
       width:50%;
       border-right:1px solid #C4C4C4;
       @media (max-width:600px){
             border:none;
             border-top:1px solid #C4C4C4;
+            // border:1px solid red;
             padding-top:20px;
             width:100%;
+      }
+      & div p{
+            color:${props => props.theme=="dark" ? "#94a1b2" : "#000000"};
       }
 `;
 const InfoWrapper = styled.div`
       display:flex;
       align-items:center;
+      // border:1px solid red;
       margin-bottom:15px;
       @media (max-width:600px){
+            // margin:0 auto;
+            // text-align:center;
             &:last-child{
                   justify-content:center;
             }
@@ -152,32 +180,34 @@ margin-right:30px;
 const CtaLayout = () => {
       const [email, setEmail] = useState("");
       const [msg, setMsg] = useState("");
+      const themeContext = useContext(ThemeContext);
+      const isDark = themeContext.theme==="dark";
       return (
-            <Container id="contact">
+            <Container theme={themeContext.theme} id="contact">
                   <Heading>Contact me</Heading>
                   <Wrapper>
-                        <Info>
+                        <Info theme={themeContext.theme}>
                               <InfoWrapper>
-                                    <img width="35px" height="auto" src={EmailIcon} />
+                                    <img style={{fill:"white"}} width="35px" height="auto" src={isDark ? EmailDark : EmailIcon} />
                                     <InfoText>vineetkme.99@gmail.com</InfoText>
                               </InfoWrapper>
                               <InfoWrapper>
-                                    <img width="35px" height="auto" src={Phone} />
+                                    <img width="35px" height="auto" src={isDark ? PhoneDark : Phone} />
                                     <InfoText>+91 9513126054</InfoText>
                               </InfoWrapper>
                               <InfoWrapper style={{alignItems:"flex-start"}}>
-                                    <img width="35px" height="auto" src={Home} />
+                                    <img width="35px" height="auto" src={isDark ? HomeDark : Home} />
                                     <InfoText>Saraswathipuram, Tumakuru,
                                     Karnataka - 572105</InfoText>
                               </InfoWrapper>
                               <InfoWrapper style={{marginTop:"40px"}}>
-                                    <SocialLink href="https://github.com/vineetk13"><SocialImg src={Github} /></SocialLink>
-                                    <SocialLink href="https://www.linkedin.com/in/vineetk13699/"><SocialImg src={Linkedin} /></SocialLink>
-                                    <SocialLink href="https://twitter.com/Vineetkme"><SocialImg src={Twitter} /></SocialLink>
+                                    <SocialLink href="https://github.com/vineetk13"><SocialImg src={isDark ? GithubDark : Github} /></SocialLink>
+                                    <SocialLink href="https://www.linkedin.com/in/vineetk13699/"><SocialImg src={isDark ? LinkedinDark : Linkedin} /></SocialLink>
+                                    <SocialLink href="https://twitter.com/Vineetkme"><SocialImg src={isDark ? TwitterDark : Twitter} /></SocialLink>
                                     {/*<SocialImg src={Facebook} />*/}
                               </InfoWrapper>
                         </Info>
-                        <InputWrapper>
+                        <InputWrapper theme={themeContext.theme}>
                               <Email placeholder="Your email" value={email} onChange={(e) => setEmail(e.target.value)} type="email" /><br/>
                               <Message value={msg} placeholder="Your message" onChange={(e) => setMsg(e.target.value)} /><br/>
                               <Button disabled={email==="" || msg===""}><a target="_blank" style={{color:"#ffffff",textDecoration:"none"}} href={(email!=="" && msg!=="") && `https://mail.google.com/mail/?view=cm&fs=1&su=MAIL FROM PORTFOLIO by ${email}&to=vineetkme.99@gmail.com&body=${msg}`}>Send</a></Button>

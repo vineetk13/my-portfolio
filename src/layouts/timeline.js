@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
 
+import { ThemeContext } from '../App';
 import TimelineElement from '../components/timeline';
 import timelineData from '../utils/timelineData';
 
-const Container = styled.div`
+const Wrapper = styled.div`
     position:relative;
     display:flex;
     flex-direction:column;
@@ -16,16 +17,25 @@ const Container = styled.div`
         width:4px;
         height:100%;
         @media (max-width: 600px) {
-            z-index:-1;
+            z-index:0;
          }
     }
+`;
+const Container = styled.div`
+
+&,&>div{
+    transition: background-color 250ms;
+background-color:${props => props.theme==="light" ? "#ffffff" : "#16161a"};
+}
 `;
 
 const Heading = styled.p`
     font-weight:bold;
     font-size:40px;
-    color:#192A56;
+    // color:#192A56;
+    color:${props => props.theme=="dark" ? "#fffffe" : "#192A56"};
     padding:20px 80px;
+    padding-bottom:30px;
     @media (max-width: 600px) {
         font-size:30px;
         padding-left:20px;
@@ -34,13 +44,14 @@ const Heading = styled.p`
 `;
 
 const Timeline = () => {
+    const themeContext = useContext(ThemeContext);
     return (
-        <div id="education">
-        <Heading>Education & Experience</Heading>
-        <Container>
-            {timelineData.map((data) => <TimelineElement data={data} />)}
+        <Container theme={themeContext.theme} id="education">
+            <Heading theme={themeContext.theme}>Education & Experience</Heading>
+            <Wrapper>
+                {timelineData.map((data) => <TimelineElement theme={themeContext.theme} data={data} />)}
+            </Wrapper>
         </Container>
-        </div>
     )
 }
 

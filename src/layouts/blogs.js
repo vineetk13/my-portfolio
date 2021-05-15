@@ -1,15 +1,25 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import styled from 'styled-components';
 
+import { ThemeContext } from '../App';
 import { BlogComponent } from '../components/blog';
 
 const Container = styled.div`
       // border:2px dashed green;
       padding:40px 80px;
       background-color:#d8eefe;
+      transition: background-color 250ms;
+      background-color:${props => props.theme==="light" ? "#d8eefe" : "#242629"};
+      &>p{
+            color:${props => props.theme=="dark" ? "#fffffe" : "#192A56"};
+      }
+      & div div{
+            background-color:${props => props.theme==="light" ? "#ffffff" : "#16161a"};
+      }
       // padding-top:0;
       @media (max-width:760px){
             padding:20px;
+            padding-bottom:40px;
       }
 `;
 const Heading = styled.p`
@@ -18,6 +28,7 @@ const Heading = styled.p`
     color:#192A56;
 `;
 const BlogsSection = styled.div`
+     
       margin-top:30px;
       display:grid;
       grid-template-columns:repeat(auto-fill, minmax(350px,1fr));
@@ -32,6 +43,8 @@ const BlogsSection = styled.div`
 
 const BlogsLayout = () => {
       const [blogs, setBlogs] = useState([]);
+
+      const themeContext = useContext(ThemeContext);
       useEffect(() => {
             fetch("https://dev.to/api/articles?username=vineetk13")
             .then((res) => res.json())
@@ -40,7 +53,7 @@ const BlogsLayout = () => {
       },[])
       // console.log(blogs);
       return (
-            <Container id="blogs">
+            <Container theme={themeContext.theme} id="blogs">
             <Heading>Blogs</Heading>
             <BlogsSection>
             {blogs && blogs.map((b,i) => {
@@ -53,6 +66,7 @@ const BlogsLayout = () => {
                               title={b.title}
                               link={b.url}
                               comments={b.comments_count}
+                              theme={themeContext.theme}
                         />
                   )
             })}

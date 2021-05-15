@@ -1,6 +1,7 @@
-import React from 'react';
+import React,{ useContext } from 'react';
 import styled from 'styled-components';
 
+import { ThemeContext } from '../App';
 import MobileApp from '../components/mobileApp';
 import WebApp from '../components/webApp';
 import MovieBrowser from '../utils/movies-3.png';
@@ -10,7 +11,16 @@ import PhotoFeed from '../utils/gallery.png';
 import BookStore from '../utils/books.png';
 
 const Container = styled.div`
-    margin-top:40px;
+    padding-top:40px;
+    padding-bottom:20px;
+    transition: background-color 250ms;
+    background-color:${props => props.theme==="light" ? "#ffffff" : "#16161a"};
+    @media (max-width:760px){
+        padding-top:30px;
+    }
+    &>p{
+        color:${props => props.theme=="dark" ? "#fffffe" : "#192A56"};
+    }
 `;
 const Heading = styled.p`
     font-weight:bold;
@@ -25,7 +35,7 @@ const Section = styled.div`
     display:flex;
     // border:1px solid red;
     // padding:0px 30px;
-    margin:30px 0;
+    // margin:0px 0;
     margin-top:20px;
     // background-color:#101820;
     justify-content:space-around;
@@ -39,8 +49,9 @@ const Section = styled.div`
 `
 
 const Projects = () => {
+    const themeContext = useContext(ThemeContext);
     return (
-        <Container id="projects">
+        <Container theme={themeContext.theme} id="projects">
             <Heading>Projects</Heading>
             <Section>
                 <MobileApp appName="Movie Browser App" appImage={MovieBrowser} git="https://github.com/vineetk13/React-Native-Movie-Browser-app" />

@@ -1,5 +1,7 @@
-import React from 'react';
+import React,{ useContext } from 'react';
 import styled, {keyframes} from 'styled-components';
+
+import { ThemeContext } from '../App';
 
 import Html from '../assets/skillIcons/html-5.svg';
 import Css from '../assets/skillIcons/css-3.svg';
@@ -21,6 +23,7 @@ const Heading = styled.p`
     font-size:40px;
     color:#192A56;
     padding:20px 0px;
+    color:${props => props.theme=="dark" ? "#fffffe" : "#192A56"};
 `;
 const Section = styled.div`
     margin-top:40px;
@@ -34,12 +37,15 @@ const Section = styled.div`
     }
 `;
 const Container = styled.div`
-    margin-top:40px;
+   
     // height:52vh;
     padding:0px 80px;
+    padding-top:40px;
+    transition: background-color 250ms;
+    background-color:${props => props.theme==="light" ? "#ffffff" : "#16161a"};
     @media (max-width:760px){
         padding:0 20px;
-        margin-top:20px;
+        padding-top:20px;
     }
 `;
 // const y = Math.round(Math.random()*17);
@@ -66,9 +72,10 @@ const Img = styled.img`
 `;
 
 const Skills = () => {
+    const themeContext = useContext(ThemeContext);
     return (
-        <Container id="skills">
-            <Heading>Skills</Heading>
+        <Container theme={themeContext.theme} id="skills">
+            <Heading theme={themeContext.theme}>Skills</Heading>
             <Section>
                 <Skill >
                     <Img 
@@ -160,4 +167,3 @@ const Skills = () => {
 }
 
 export default Skills;
-// style={{position:"absolute",top:"3%",left:"50%"}}
