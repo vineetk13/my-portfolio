@@ -114,6 +114,16 @@ const Period = styled.p`
         font-size:14px;
     }
 `;
+const Ul = styled.ul`
+    margin:0;
+   
+    & li{
+        margin-left:0;
+        padding-left:0;
+        // border:1px solid blue;
+
+    }
+`;
 
 
 const TimelineElement = (props) => {
@@ -123,7 +133,11 @@ const TimelineElement = (props) => {
             <Content theme={theme}>
                 <Title>{data.title}</Title>
                 <Location>{data.location}</Location>
-                <Desc>{data.description}</Desc>
+                <Desc>{data.type!=="work" ? data.description : (
+                    <Ul>
+                    {data.description.points.map((p,i) => <li key={i}>{p}</li>)}
+                    </Ul>
+                )}</Desc>
                 <Period theme={theme}>{data.period}</Period>
             </Content>
         </Container>

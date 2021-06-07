@@ -4,6 +4,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import CommentIcon from '../assets/illustrations/comment-regular.svg';
+import CommentDark from '../assets/illustrations/comment-dark.svg';
 
 const Container = styled.div`
       // border:1px solid blue;
@@ -88,7 +89,8 @@ export const BlogComponent = (props) => {
                   </div>
                   <BottomSection theme={theme}>
                         <FontAwesomeIcon style={{color:"#F0142F"}} icon={faHeart} />&ensp;{reactions}&emsp;
-                        <img src={CommentIcon} alt="comment icon" width="15px" height="15px" />&ensp;{comments}
+                        <FontAwesomeIcon style={{color:theme=="dark" ? "#94a1b2" : "black"}} icon={faComment} />
+      {/*<img src={theme=="dark" ? CommentDark : CommentIcon} alt="comment icon" width="15px" height="15px" />*/}&ensp;{comments}
                   </BottomSection>
             </Container>
       )

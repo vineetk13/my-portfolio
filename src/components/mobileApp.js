@@ -38,9 +38,11 @@ const Overlay = styled.div`
 `;
 const Container = styled.div`
     position:relative;
+    margin:0 auto;
     border-radius:7px;
     // border:2px solid green;
     height:auto;
+    z-index:99;
     // max-height:570px;
     // box-shadow: 0 0 5px rgba(0,0,0,0.4);
     width:270px;

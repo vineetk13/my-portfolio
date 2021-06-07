@@ -23,7 +23,7 @@ const Overlay = styled.div`
     opacity:0.7;
     width: 75%;
     transition: .4s ease;
-    height:10%;
+    height:${props => props.big ? "5%" : "10%"};
     &::before{
         content:url(${Img});
         position:absolute;
@@ -45,7 +45,8 @@ const Container = styled.div`
     border-radius:7px;
     // border:2px solid green;
     // box-shadow: 0 0 5px rgba(0,0,0,0.4);
-    width:35vw;
+    width:${props => props.big ? "60vw" : "35vw"};
+    margin:0 auto;
     @media (max-width: 600px) {
         margin-bottom:15px;
         width:85vw;
@@ -71,9 +72,9 @@ const Image = styled.img`
 
 const WebApp = (props) => {
     return (
-        <Container>
+        <Container big={props.big}>
             <Image src={props.appImage} />
-            <Overlay>
+            <Overlay big={props.big}>
                 <Details>
                     <Title>{props.appName}</Title>
                     <Links>

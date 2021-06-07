@@ -4,7 +4,7 @@ import styled, { keyframes } from 'styled-components';
 
 import { ThemeContext } from '../App';
 import Moon from '../assets/illustrations/moon.svg';
-import Sun from '../assets/illustrations/sun.svg';
+import Sun from '../assets/illustrations/sun2.svg';
 
 const Ul = styled.ul`
     list-style-type:none;
@@ -120,12 +120,13 @@ const SliderRound = styled.span`
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  // background-color: #242629;
+//   background-color: #242629;
   border-radius: 14px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   &:before {
     position: absolute;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
     border-radius: 50%;
     text-align:center;
     content: url(${props => props.theme==="dark" ? Moon : Sun});
@@ -141,7 +142,7 @@ const SliderRound = styled.span`
     }};
     left: 4px;
     bottom: 4px;
-    background-color: #16161a;
+    background-color: ${props => props.theme==="dark" ? "#16161a" : "#ffffff"};
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }

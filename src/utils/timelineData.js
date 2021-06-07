@@ -3,7 +3,11 @@ const timelineData = [
         id:1,
         title:"Frontend development intern",
         location:"Urbanstop Studio LLP, Bangalore",
-        description:"Led frontend development of projects under domains of e-commerce, advocacy and headless CMS",
+        description:{
+            points:["Led frontend development of projects under domains of e-commerce, advocacy and headless CMS.",
+            "Implemented complex client requirements using necessary Google APIs.",
+            "Developed industry standard coding patterns and implementations."]
+        },
         period:"10/2020 - Present",
         type:"work"
     },
