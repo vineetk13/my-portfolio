@@ -117,8 +117,7 @@ const Period = styled.p`
 const Ul = styled.ul`
     margin: 0;
     padding: 0;
-    list-style-type: circle;
-    list-style-position: outside;
+    list-style-type: none;
     & li{
         margin-left:0;
         padding-left:0;
