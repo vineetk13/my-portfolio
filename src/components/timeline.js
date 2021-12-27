@@ -115,13 +115,14 @@ const Period = styled.p`
     }
 `;
 const Ul = styled.ul`
-    margin:0;
-   
+    margin: 0;
+    padding: 0;
+    list-style-type: circle;
+    list-style-position: outside;
     & li{
         margin-left:0;
         padding-left:0;
-        // border:1px solid blue;
-
+        text-align: left;
     }
 `;
 

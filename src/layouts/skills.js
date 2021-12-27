@@ -17,6 +17,7 @@ import Redux from '../assets/skillIcons/redux.svg';
 import Draft from '../assets/skillIcons/draftjs-logo.svg';
 import Node from '../assets/skillIcons/node.svg';
 import Jest from '../assets/skillIcons/jest.svg';
+import Webrtc from '../assets/skillIcons/webrtc.svg'
 
 const Heading = styled.p`
     font-weight:bold;
@@ -159,6 +160,12 @@ const Skills = () => {
                     <Img 
                         src={Node} 
                         style={{width:"6em"}} 
+                    />
+                </Skill>
+                <Skill>
+                    <Img 
+                        src={Webrtc} 
+                        style={{width:"5em"}} 
                     />
                 </Skill>
             </Section>

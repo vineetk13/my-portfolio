@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Image from '../utils/My image.JPG';
+import Image from '../utils/Casual pic.jpg';
 import Bitmoji from '../utils/bitmoji.jpg';
 
 const Container = styled.div`
@@ -29,7 +29,7 @@ const Img = styled.img`
 const MyImage = () => {
     return (
         <Container>
-            <Img src={Bitmoji} alt="Profile Image" />
+            <Img src={Image} alt="Profile Image" />
         </Container>
     )
 }
