@@ -62,9 +62,6 @@ const BottomSection = styled.div`
       & p{
             color:${props => props.theme=="dark" ? "#94a1b2" : "black"};
       }
-      @media (max-width:760px){
-            width:40%;
-      }
 `;
 const Date = styled.p`
       padding:0;
