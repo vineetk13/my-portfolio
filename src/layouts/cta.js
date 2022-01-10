@@ -18,6 +18,8 @@ import Linkedin from '../assets/illustrations/linkedin.svg';
 import LinkedinDark from '../assets/illustrations/linkedin-dark.svg';
 import Twitter from '../assets/illustrations/twitter.svg';
 import TwitterDark from '../assets/illustrations/twitter-dark.svg';
+import Behance from '../assets/illustrations/behance.svg';
+import BehanceDark from '../assets/illustrations/behance-dark.svg';
 
 const Container = styled.div`
       // border:2px dashed green;
@@ -204,6 +206,7 @@ const CtaLayout = () => {
                                     <SocialLink href="https://github.com/vineetk13"><SocialImg src={isDark ? GithubDark : Github} /></SocialLink>
                                     <SocialLink href="https://www.linkedin.com/in/vineetk13699/"><SocialImg src={isDark ? LinkedinDark : Linkedin} /></SocialLink>
                                     <SocialLink href="https://twitter.com/Vineetkme"><SocialImg src={isDark ? TwitterDark : Twitter} /></SocialLink>
+                                    <SocialLink href="https://www.behance.net/vineetk1"><SocialImg src={isDark ? BehanceDark : Behance} /></SocialLink>
                                     {/*<SocialImg src={Facebook} />*/}
                               </InfoWrapper>
                         </Info>

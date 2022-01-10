@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-    padding:20px 80px;
+    padding:20px 0px;
     width:530px;
     // border:1px solid blue;
     color:${props => props.theme=="dark" ? "#fffffe" : "black"};
@@ -27,7 +27,6 @@ const Intro = styled.p`
     font-size: 55px;
     @media (max-width: 760px) {
         font-size:45px;
-        // color:orange;
     }
 `;
 const Summary = styled.p`
@@ -48,6 +47,7 @@ const Introduction = (props) => {
             <Summary {...props}>
                 Passionate in web design and development. Strengthened in various frontend techologies by building projects under different domains and implementing complex user requirements. Enthusiast of constant learning and dedicated towards creative thinking.         
             </Summary>
+            {/*<a href="/assets/my_resume1.pdf" download>Download Resume</a>*/}
         </Container>
     )
 }

@@ -9,7 +9,6 @@ const Container = styled.div`
     flex:1;
     height:85vh;
     display: flex;
-    // margin-top:40px;
     flex-flow:row wrap;
     justify-content: space-around;
     transition: background-color 250ms;

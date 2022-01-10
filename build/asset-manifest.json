@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.3e21588a.chunk.css",
-    "main.js": "/my-portfolio/static/js/main.8a9e5779.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.8a9e5779.chunk.js.map",
+    "main.js": "/my-portfolio/static/js/main.10a9ca95.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.10a9ca95.chunk.js.map",
     "runtime-main.js": "/my-portfolio/static/js/runtime-main.b47c9c33.js",
     "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.b47c9c33.js.map",
     "static/js/2.f9480f89.chunk.js": "/my-portfolio/static/js/2.f9480f89.chunk.js",
@@ -12,6 +12,8 @@
     "static/js/2.f9480f89.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.f9480f89.chunk.js.LICENSE.txt",
     "static/media/Casual pic.7f266bb1.jpg": "/my-portfolio/static/media/Casual pic.7f266bb1.jpg",
     "static/media/api.4f6c170d.svg": "/my-portfolio/static/media/api.4f6c170d.svg",
+    "static/media/behance-dark.d02103c4.svg": "/my-portfolio/static/media/behance-dark.d02103c4.svg",
+    "static/media/behance.07d41547.svg": "/my-portfolio/static/media/behance.07d41547.svg",
     "static/media/bitmoji.188441cf.jpg": "/my-portfolio/static/media/bitmoji.188441cf.jpg",
     "static/media/blob1.3d52e27f.svg": "/my-portfolio/static/media/blob1.3d52e27f.svg",
     "static/media/blob2.a9ea7b94.svg": "/my-portfolio/static/media/blob2.a9ea7b94.svg",
@@ -58,6 +60,6 @@
     "static/js/runtime-main.b47c9c33.js",
     "static/js/2.f9480f89.chunk.js",
     "static/css/main.3e21588a.chunk.css",
-    "static/js/main.8a9e5779.chunk.js"
+    "static/js/main.10a9ca95.chunk.js"
   ]
 }

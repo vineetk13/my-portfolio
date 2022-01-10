@@ -6,9 +6,7 @@ import Bitmoji from '../utils/bitmoji.jpg';
 
 const Container = styled.div`
     padding:45px 0px;
-    width:250px;
     // border:1px solid red;
-    flex:1;
     @media (max-width:760px){
         padding:20px 0;
     }
