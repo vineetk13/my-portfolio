@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import LandingPage from './layouts/landing';
 import Timeline from './layouts/timeline';
@@ -7,7 +7,7 @@ import Navbar from './layouts/navbar';
 import Skills from './layouts/skills';
 import Projects from './layouts/projects';
 import BlogsLayout from './layouts/blogs';
-import CtaLayout from './layouts/cta';
+import ContactLayout from './layouts/contact';
 
 export const ThemeContext = React.createContext({theme:"light",toggle:() => {}});
 
@@ -23,7 +23,7 @@ function App() {
             <Skills />
             <Projects />
             <BlogsLayout />
-            <CtaLayout />
+            <ContactLayout />
           </Router>
           </ThemeContext.Provider>
       </div>
