@@ -4,9 +4,9 @@ const timelineData = [
         title:"Software Engineer - UI",
         location:"Esper, Bangalore",
         description:{
-            points:["Exploring UI performance, WebRTC and AWS"]
+            points:["Exploring UI, WebRTC and AWS"]
         },
-        period:"07/2020 - Present",
+        period:"07/2021 - Present",
         type:"work"
     },
     {
@@ -18,7 +18,7 @@ const timelineData = [
             "• Implemented complex client requirements using necessary Google APIs.",
             "• Developed industry standard coding patterns and implementations."]
         },
-        period:"10/2020 - 06/2020",
+        period:"10/2020 - 06/2021",
         type:"work"
     },
     {
