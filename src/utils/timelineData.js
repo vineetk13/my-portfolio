@@ -1,17 +1,17 @@
 const timelineData = [
     {
         id:1,
-        title:"Software Engineer - UI",
-        location:"Esper, Bangalore",
+        title:"Software Engineer 3",
+        location:"Esper.io Software Services Pvt. Ltd, Bangalore",
         description:{
-            points:["Exploring UI, WebRTC and AWS"]
+            points:["Exploring UI optimizations, Websockets, WebRTC and Kubernetes"]
         },
         period:"07/2021 - Present",
         type:"work"
     },
     {
         id:2,
-        title:"Frontend development intern",
+        title:"Frontend Developer Intern",
         location:"Urbanstop Studio LLP, Bangalore",
         description:{
             points:["• Led frontend development of projects under domains of e-commerce, advocacy and headless CMS.",
@@ -31,7 +31,7 @@ const timelineData = [
     },
     {
         id:4,
-        title:"Class XII",
+        title:"Pre-university in Science(Class XII)",
         location:"Sri Chaitanya Techno School(CBSE), Bangalore",
         description:"Percentage: 88.80%",
         period:"06/2015 - 03/2017",

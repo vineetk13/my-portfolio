@@ -18,6 +18,13 @@ import Draft from '../assets/skillIcons/draftjs-logo.svg';
 import Node from '../assets/skillIcons/node.svg';
 import Jest from '../assets/skillIcons/jest.svg';
 import Webrtc from '../assets/skillIcons/webrtc.svg'
+import Ts from '../assets/skillIcons/ts-logo.svg'
+import Python from '../assets/skillIcons/python-logo.svg'
+import Websocket from '../assets/skillIcons/websocket-logo.svg'
+import PSQL from '../assets/skillIcons/postgresql-logo.svg'
+import Mongo from '../assets/skillIcons/mongo-logo.svg'
+import Docker from  '../assets/skillIcons/docker-logo.svg'
+import K8s from '../assets/skillIcons/k8s-logo.svg'
 
 const Heading = styled.p`
     font-weight:bold;
@@ -81,12 +88,14 @@ const Skills = () => {
                 <Skill >
                     <Img 
                         // style={{width:"8em"}} 
+                        title='React.js'
                         src={Reactjs} 
                     />
                 </Skill>
                 <Skill>
                     <Img 
-                        src={Expo} 
+                        src={Ts} 
+                        title='Typescript'
                         // style={{width:"5em"}} 
                     />
                 </Skill>
@@ -94,78 +103,112 @@ const Skills = () => {
                     <Img 
                         src={Redux} 
                         style={{width:"5em"}} 
+                        title='Redux'
                     />
                 </Skill>
                 <Skill>
                     <Img 
-                        src={Java} 
+                        src={Python} 
                         style={{width:"4em"}} 
+                        title='Python'
                     />
                 </Skill>
                 <Skill>
                     <Img 
                         src={Html} 
                         style={{width:"4em"}} 
+                        title='HTML'
                     />
                 </Skill>
                 <Skill>
                     <Img 
                         src={Css} 
-                        style={{width:"3em"}} 
+                        style={{width:"3em"}}
+                        title='CSS' 
                     />
                 </Skill>
                 <Skill>
                     <Img 
                         src={Js} 
                         style={{width:"5.5em"}} 
+                        title='Javascript'
                     />
                 </Skill>
                 <Skill>
                     <Img 
                         src={Api} 
                         style={{width:"4.5em"}} 
+                        title='API Integration'
                     />
                 </Skill>
                 <Skill>
                     <Img 
                         src={Draft} 
                         style={{width:"4.0em"}} 
+                        title='Draft.js'
                     />
                 </Skill>
                 <Skill>
                     <Img 
-                        src={Mysql} 
+                        src={PSQL} 
                         style={{width:"5em"}} 
+                        title='PostgreSQL'
                     />
                 </Skill>
                 <Skill>
                     <Img 
-                        src={Php} 
-                        style={{width:"4em"}} 
+                        src={Mongo} 
+                        style={{width:"3em"}} 
+                        title='MongoDB'
                     />
                 </Skill>
                 <Skill>
                     <Img 
                         src={Git} 
                         style={{width:"4.5em"}} 
+                        title='Git'
                     />
                 </Skill>
                 <Skill>
                     <Img 
                         src={Jest} 
                         style={{width:"4.0em"}} 
+                        title='Jest'
                     />
                 </Skill>
                 <Skill>
                     <Img 
                         src={Node} 
                         style={{width:"6em"}} 
+                        title='Node.js'
+                    />
+                </Skill>
+                <Skill>
+                    <Img 
+                        src={Websocket} 
+                        style={{width:"5em"}} 
+                        title='Websocket'
                     />
                 </Skill>
                 <Skill>
                     <Img 
                         src={Webrtc} 
                         style={{width:"5em"}} 
+                        title='WebRTC'
+                    />
+                </Skill>
+                <Skill>
+                    <Img 
+                        src={Docker} 
+                        style={{width:"4.0em"}} 
+                        title='Docker'
+                    />
+                </Skill>
+                <Skill>
+                    <Img 
+                        src={K8s} 
+                        style={{width:"4.0em"}} 
+                        title='Kubernetes'
                     />
                 </Skill>
             </Section>

@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const Container = styled.div`
     padding:20px 0px;
     width:530px;
-    // border:1px solid blue;
     color:${props => props.theme=="dark" ? "#fffffe" : "black"};
     @media (max-width: 760px) {
         padding:40px 30px;

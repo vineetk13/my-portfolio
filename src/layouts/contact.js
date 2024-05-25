@@ -126,10 +126,9 @@ const ContactLayout = () => {
                                     <img alt='phone-icon' width="35px" height="auto" src={isDark ? PhoneDark : Phone} />
                                     <InfoText>+91 9513126054</InfoText>
                               </InfoWrapper>
-                              <InfoWrapper style={{alignItems:"flex-start"}}>
+                              <InfoWrapper style={{alignItems:"flex-end"}}>
                                     <img alt='home-icon' width="35px" height="auto" src={isDark ? HomeDark : Home} />
-                                    <InfoText>Saraswathipuram, Tumakuru,
-                                    Karnataka - 572105</InfoText>
+                                    <InfoText>Bengaluru, India - 560060</InfoText>
                               </InfoWrapper>
                         </Info>
                   
@@ -137,7 +136,7 @@ const ContactLayout = () => {
                               <SocialLink href="https://github.com/vineetk13"><SocialImg src={isDark ? GithubDark : Github} /></SocialLink>
                               <SocialLink href="https://www.linkedin.com/in/vineetk13699/"><SocialImg src={isDark ? LinkedinDark : Linkedin} /></SocialLink>
                               <SocialLink href="https://twitter.com/Vineetkme"><SocialImg src={isDark ? TwitterDark : Twitter} /></SocialLink>
-                              <SocialLink href="https://www.behance.net/vineetk1"><SocialImg src={isDark ? BehanceDark : Behance} /></SocialLink>
+                              {/* <SocialLink href="https://www.behance.net/vineetk1"><SocialImg src={isDark ? BehanceDark : Behance} /></SocialLink> */}
                         </SocialWrapper>
                   </Wrapper>
             </Container>
