@@ -44,7 +44,8 @@ const Introduction = (props) => {
             <Greeting>Hello,</Greeting>
             <Intro>I'm Vineet K</Intro>
             <Summary {...props}>
-                Passionate in web design and development. Strengthened in various frontend techologies by building projects under different domains and implementing complex user requirements. Enthusiast of constant learning and dedicated towards creative thinking.         
+                {/* Passionate in web design and development. Strengthened in various frontend techologies by building projects under different domains and implementing complex user requirements. Enthusiast of constant learning and dedicated towards creative thinking.   */}
+                and it all began when I realised the internet does make life a little easier!   
             </Summary>
             {/*<a href="/assets/my_resume1.pdf" download>Download Resume</a>*/}
         </Container>
