@@ -209,7 +209,7 @@ const Skills = () => {
                     <Img 
                         src={Aws} 
                         style={{width:"4.0em"}} 
-                        title='Kubernetes'
+                        title='AWS'
                     />
                 </Skill>
                 <Skill>
