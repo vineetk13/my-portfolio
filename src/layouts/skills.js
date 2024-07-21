@@ -25,6 +25,7 @@ import PSQL from '../assets/skillIcons/postgresql-logo.svg'
 import Mongo from '../assets/skillIcons/mongo-logo.svg'
 import Docker from  '../assets/skillIcons/docker-logo.svg'
 import K8s from '../assets/skillIcons/k8s-logo.svg'
+import Aws from '../assets/skillIcons/awslogo.svg'
 
 const Heading = styled.p`
     font-weight:bold;
@@ -202,6 +203,13 @@ const Skills = () => {
                         src={Docker} 
                         style={{width:"4.0em"}} 
                         title='Docker'
+                    />
+                </Skill>
+                <Skill>
+                    <Img 
+                        src={Aws} 
+                        style={{width:"4.0em"}} 
+                        title='Kubernetes'
                     />
                 </Skill>
                 <Skill>
