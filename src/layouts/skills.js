@@ -84,7 +84,7 @@ const Skills = () => {
     const themeContext = useContext(ThemeContext);
     return (
         <Container theme={themeContext.theme} id="skills">
-            <Heading theme={themeContext.theme}>Skills</Heading>
+            <Heading theme={themeContext.theme}>🐬 Skills</Heading>
             <Section>
                 <Skill >
                     <Img 

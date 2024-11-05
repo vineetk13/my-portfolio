@@ -47,7 +47,7 @@ const Timeline = () => {
     const themeContext = useContext(ThemeContext);
     return (
         <Container theme={themeContext.theme} id="education">
-            <Heading theme={themeContext.theme}>Education & Experience</Heading>
+            <Heading theme={themeContext.theme}>🦍Education & Experience</Heading>
             <Wrapper>
                 {timelineData.map((data) => <TimelineElement theme={themeContext.theme} data={data} />)}
             </Wrapper>

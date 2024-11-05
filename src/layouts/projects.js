@@ -89,7 +89,7 @@ const Projects = () => {
     const themeContext = useContext(ThemeContext);
     return (
         <Container theme={themeContext.theme} id="projects">
-            <Heading>Projects</Heading>
+            <Heading>🐶 Pet projects</Heading>
             <Section>
                 <Subsection>
                     {/*<WebApp appName="React TODO App" appImage={ReactTodo} gitlink="https://github.com/vineetk13/React-TODO-App" />*/}

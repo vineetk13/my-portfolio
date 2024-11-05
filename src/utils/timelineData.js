@@ -15,7 +15,7 @@ const timelineData = [
         location:"Urbanstop Studio LLP, Bangalore",
         description:{
             points:["• Led frontend development of projects under domains of e-commerce, advocacy and headless CMS.",
-            "• Implemented complex client requirements using necessary Google APIs.",
+            "• Implemented complex client requirements using Google APIs and payment gateways.",
             "• Developed industry standard coding patterns and implementations."]
         },
         period:"10/2020 - 06/2021",

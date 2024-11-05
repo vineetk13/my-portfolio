@@ -54,7 +54,7 @@ const BlogsLayout = () => {
       // console.log(blogs);
       return (
             <Container theme={themeContext.theme} id="blogs">
-            <Heading>Blogs</Heading>
+            <Heading>🐘 Blogs</Heading>
             <BlogsSection>
             {blogs && blogs.map((b,i) => {
                   return (
