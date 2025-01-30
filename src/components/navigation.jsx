@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { NavLink, withRouter } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 
 import { ThemeContext } from '../App';
@@ -219,7 +219,8 @@ const Navig = (props) => {
       const burger = document.querySelector(".burger");
       burger.classList.toggle("toggle");
     }
-    const hash = props.location.hash;
+    const location = useLocation();
+    const hash = location.hash;
     const themeContext = useContext(ThemeContext);
     // console.log(props);
     return (
@@ -247,4 +248,4 @@ const Navig = (props) => {
     )
 }
 
-export default withRouter(Navig);
+export default Navig;

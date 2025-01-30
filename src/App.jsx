@@ -8,6 +8,7 @@ import Skills from './layouts/skills';
 import Projects from './layouts/projects';
 import BlogsLayout from './layouts/blogs';
 import ContactLayout from './layouts/contact';
+import Opensource from './layouts/opensource';
 
 export const ThemeContext = React.createContext({theme:"light",toggle:() => {}});
 
@@ -20,6 +21,7 @@ function App() {
             <Navbar />
             <LandingPage />
             <Timeline />
+            <Opensource />
             <Skills />
             <Projects />
             <BlogsLayout />
